@@ -60,5 +60,12 @@ namespace DMUBox
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmHallStudentReport myHallStudentReportForm = new frmHallStudentReport();
+
+            myHallStudentReportForm.Show();
+        }
     }
 }

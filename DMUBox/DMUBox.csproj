@@ -63,6 +63,12 @@
     <Compile Include="frmFindStudent.Designer.cs">
       <DependentUpon>frmFindStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHallStudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHallStudentReport.Designer.cs">
+      <DependentUpon>frmHallStudentReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <EmbeddedResource Include="frmFindStudent.resx">
       <DependentUpon>frmFindStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHallStudentReport.resx">
+      <DependentUpon>frmHallStudentReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rptHallStudents.rdlc" />
     <EmbeddedResource Include="rptStudents.rdlc" />
     <EmbeddedResource Include="frmStudents.resx">
       <DependentUpon>frmStudents.cs</DependentUpon>
