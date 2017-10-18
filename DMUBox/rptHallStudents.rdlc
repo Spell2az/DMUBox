@@ -254,7 +254,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -410,6 +409,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -535,6 +535,10 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>HallName1</ToggleItem>
+                  </Visibility>
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
@@ -547,8 +551,16 @@
                       <Value>=Fields!ForeName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>HallName1</ToggleItem>
+                  </Visibility>
                 </TablixMember>
                 <TablixMember>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>HallName1</ToggleItem>
+                  </Visibility>
                   <KeepWithGroup>Before</KeepWithGroup>
                 </TablixMember>
               </TablixMembers>
