@@ -1,6 +1,6 @@
 ﻿namespace DMUBox
 {
-    partial class frmBox
+    partial class frmTestBox
     {
         /// <summary>
         /// Required designer variable.
@@ -29,46 +29,68 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestBox));
             System.Windows.Forms.Label boxNoLabel;
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label priceLabel;
+            this.dMUBoxDataSet = new DMUBox.DMUBoxDataSet();
+            this.tblBoxBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblBoxTableAdapter = new DMUBox.DMUBoxDataSetTableAdapters.tblBoxTableAdapter();
+            this.tableAdapterManager = new DMUBox.DMUBoxDataSetTableAdapters.TableAdapterManager();
             this.tblBoxBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.tblBoxBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.tblBoxBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dMUBoxDataSet = new DMUBox.DMUBoxDataSet();
-            this.tblBoxTableAdapter = new DMUBox.DMUBoxDataSetTableAdapters.tblBoxTableAdapter();
-            this.tableAdapterManager = new DMUBox.DMUBoxDataSetTableAdapters.TableAdapterManager();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tblBoxBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.boxNoTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             boxNoLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dMUBoxDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingNavigator)).BeginInit();
             this.tblBoxBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dMUBoxDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dMUBoxDataSet
+            // 
+            this.dMUBoxDataSet.DataSetName = "DMUBoxDataSet";
+            this.dMUBoxDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblBoxBindingSource
+            // 
+            this.tblBoxBindingSource.DataMember = "tblBox";
+            this.tblBoxBindingSource.DataSource = this.dMUBoxDataSet;
+            // 
+            // tblBoxTableAdapter
+            // 
+            this.tblBoxTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tblBoxTableAdapter = this.tblBoxTableAdapter;
+            this.tableAdapterManager.tblHallTableAdapter = null;
+            this.tableAdapterManager.tblOrderLineTableAdapter = null;
+            this.tableAdapterManager.tblOrderTableAdapter = null;
+            this.tableAdapterManager.tblStudentsTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = DMUBox.DMUBoxDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tblBoxBindingNavigator
             // 
@@ -96,34 +118,9 @@
             this.tblBoxBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tblBoxBindingNavigator.Name = "tblBoxBindingNavigator";
             this.tblBoxBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tblBoxBindingNavigator.Size = new System.Drawing.Size(425, 25);
+            this.tblBoxBindingNavigator.Size = new System.Drawing.Size(447, 25);
             this.tblBoxBindingNavigator.TabIndex = 0;
             this.tblBoxBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -157,9 +154,16 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -182,8 +186,26 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // tblBoxBindingNavigatorSaveItem
             // 
@@ -194,166 +216,134 @@
             this.tblBoxBindingNavigatorSaveItem.Text = "Save Data";
             this.tblBoxBindingNavigatorSaveItem.Click += new System.EventHandler(this.tblBoxBindingNavigatorSaveItem_Click);
             // 
-            // tblBoxBindingSource1
+            // boxNoLabel
             // 
-            this.tblBoxBindingSource1.DataMember = "tblBox";
-            this.tblBoxBindingSource1.DataSource = this.dMUBoxDataSet;
+            boxNoLabel.AutoSize = true;
+            boxNoLabel.Location = new System.Drawing.Point(110, 226);
+            boxNoLabel.Name = "boxNoLabel";
+            boxNoLabel.Size = new System.Drawing.Size(45, 13);
+            boxNoLabel.TabIndex = 1;
+            boxNoLabel.Text = "Box No:";
             // 
-            // dMUBoxDataSet
+            // boxNoTextBox
             // 
-            this.dMUBoxDataSet.DataSetName = "DMUBoxDataSet";
-            this.dMUBoxDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.boxNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource, "BoxNo", true));
+            this.boxNoTextBox.Location = new System.Drawing.Point(161, 223);
+            this.boxNoTextBox.Name = "boxNoTextBox";
+            this.boxNoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.boxNoTextBox.TabIndex = 2;
             // 
-            // tblBoxTableAdapter
+            // descriptionLabel
             // 
-            this.tblBoxTableAdapter.ClearBeforeFill = true;
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(92, 291);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(63, 13);
+            descriptionLabel.TabIndex = 3;
+            descriptionLabel.Text = "Description:";
             // 
-            // tableAdapterManager
+            // descriptionTextBox
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tblBoxTableAdapter = this.tblBoxTableAdapter;
-            this.tableAdapterManager.tblHallTableAdapter = null;
-            this.tableAdapterManager.tblOrderLineTableAdapter = null;
-            this.tableAdapterManager.tblOrderTableAdapter = null;
-            this.tableAdapterManager.tblStudentsTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = DMUBox.DMUBoxDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource, "Description", true));
+            this.descriptionTextBox.Location = new System.Drawing.Point(161, 288);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descriptionTextBox.TabIndex = 4;
             // 
-            // button1
+            // priceLabel
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(217, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            priceLabel.AutoSize = true;
+            priceLabel.Location = new System.Drawing.Point(121, 347);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new System.Drawing.Size(34, 13);
+            priceLabel.TabIndex = 5;
+            priceLabel.Text = "Price:";
             // 
-            // label1
+            // priceTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(167)))), ((int)(((byte)(239)))));
-            this.label1.Location = new System.Drawing.Point(44, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 24);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Box Details";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource, "Price", true));
+            this.priceTextBox.Location = new System.Drawing.Point(161, 344);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.priceTextBox.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(329, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(321, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(167)))), ((int)(((byte)(239)))));
-            this.label2.Location = new System.Drawing.Point(12, 43);
+            this.label2.Location = new System.Drawing.Point(70, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 31);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 13;
             this.label2.Text = "DMU Box scheme";
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(263, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(167)))), ((int)(((byte)(239)))));
+            this.label1.Location = new System.Drawing.Point(102, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 24);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Box Details";
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(271, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 11;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(311, 435);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // tblBoxBindingSource
-            // 
-            this.tblBoxBindingSource.CurrentChanged += new System.EventHandler(this.tblBoxBindingSource_CurrentChanged);
-            // 
-            // boxNoLabel
-            // 
-            boxNoLabel.AutoSize = true;
-            boxNoLabel.Location = new System.Drawing.Point(54, 148);
-            boxNoLabel.Name = "boxNoLabel";
-            boxNoLabel.Size = new System.Drawing.Size(45, 13);
-            boxNoLabel.TabIndex = 11;
-            boxNoLabel.Text = "Box No:";
-            // 
-            // boxNoTextBox
-            // 
-            this.boxNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource1, "BoxNo", true));
-            this.boxNoTextBox.Location = new System.Drawing.Point(105, 145);
-            this.boxNoTextBox.Name = "boxNoTextBox";
-            this.boxNoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.boxNoTextBox.TabIndex = 12;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(36, 190);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
-            descriptionLabel.TabIndex = 12;
-            descriptionLabel.Text = "Description:";
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource1, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(105, 187);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.descriptionTextBox.TabIndex = 13;
-            // 
-            // priceLabel
-            // 
-            priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(65, 239);
-            priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(34, 13);
-            priceLabel.TabIndex = 13;
-            priceLabel.Text = "Price:";
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBoxBindingSource1, "Price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(105, 236);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.priceTextBox.TabIndex = 14;
-            // 
-            // frmBox
+            // frmTestBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 350);
+            this.ClientSize = new System.Drawing.Size(447, 491);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(priceLabel);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(descriptionLabel);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(boxNoLabel);
             this.Controls.Add(this.boxNoTextBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tblBoxBindingNavigator);
-            this.Name = "frmBox";
-            this.Text = "Box";
-            this.Load += new System.EventHandler(this.Box_Load);
+            this.Name = "frmTestBox";
+            this.Text = "frmTestBox";
+            this.Load += new System.EventHandler(this.frmTestBox_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dMUBoxDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingNavigator)).EndInit();
             this.tblBoxBindingNavigator.ResumeLayout(false);
             this.tblBoxBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dMUBoxDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblBoxBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,15 +368,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton tblBoxBindingNavigatorSaveItem;
-        private System.Windows.Forms.BindingSource tblBoxBindingSource1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox boxNoTextBox;
         private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
-

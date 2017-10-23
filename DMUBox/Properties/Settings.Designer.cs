@@ -26,8 +26,9 @@ namespace DMUBox.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\Visual Studio Projects\\Pro" +
-            "jects\\DMUBox\\DMUBox\\DMUBox.mdf;Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Martin\\Documents\\Vis" +
+            "ual Studio 2015\\Projects\\DMUBox\\DMUBox\\DMUBox.mdf;Integrated Security=True;Conne" +
+            "ct Timeout=30")]
         public string DMUBoxConnectionString {
             get {
                 return ((string)(this["DMUBoxConnectionString"]));

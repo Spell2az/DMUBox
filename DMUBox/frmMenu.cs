@@ -24,7 +24,7 @@ namespace DMUBox
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmBox myBoxForm = new frmBox();
+            frmTestBox myBoxForm = new frmTestBox();
 
             myBoxForm.Show();
         }
@@ -67,5 +67,7 @@ namespace DMUBox
 
             myHallStudentReportForm.Show();
         }
+
+       
     }
 }
