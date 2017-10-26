@@ -31,5 +31,10 @@ namespace DMUBox
             this.tblBoxTableAdapter.Fill(this.dMUBoxDataSet.tblBox);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
